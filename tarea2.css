@@ -1,0 +1,122 @@
+body {
+    background-color: rgb(189, 206, 212);
+    font-family: Arial, sans-serif;
+}
+h1 {
+    color: rgb(241, 241, 241);
+    text-align: center;
+    margin-top: 20px; 
+    margin-bottom: 10px;
+}
+
+header {
+    width: 100%;
+    height: 250px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+}
+
+header .img {
+    max-width: 500px; 
+    height: auto; 
+    margin-bottom: 20px; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mapa-mental {
+    text-align: center; 
+    background-color: #1f2c38;
+    height: 180px;
+}
+
+.mapa-mental h2{
+    text-align: center;
+    font-size: 2rem;
+    color: whitesmoke;
+}
+
+.mapa-mental p{
+    font-size: 1.2rem;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.mapa-mental button {
+    margin-top: 10px;
+    padding: 10px 20px; 
+    font-size: 16px;
+    cursor: pointer; 
+    background-color: #0e131b; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+}
+
+.mapa-mental button:hover {
+    margin-top: 10px;
+    padding: 10px 20px; 
+    font-size: 20px;
+    cursor: pointer; 
+    background-color:aquamarine; 
+    color: rgb(0, 0, 0); 
+    border: none; 
+    border-radius: 5px; 
+}
+
+
+.copilot {
+    font-family: Arial, sans-serif; 
+    margin: 20px; 
+    padding: 15px;
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+    background-color: #f9f9f9; 
+}
+
+.copilot p.copilot{
+    text-align: center;
+    background-color:#1f2c38;
+    color: white;
+}
+
+.copilot ul{
+    font-size: 1.2rem;
+}
+
+.copilot p.puntos{
+    text-align: center;
+}
+
+.inicial{
+    background-color: #0e131b;
+    border-radius: 8px;
+}
+
+.descripcion p.principal{
+    font-size: 1.4rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.descripcion p.copilot{
+    font-size: 1.6rem;
+    font-weight: 800;
+}
+
+.descripcion p.infocopilot{
+    font-size: 1.3rem;
+}
+
+.referencias{
+    font-size: 1.6rem;
+    color: #599876;
+}
+.referencias p{
+    font-size: 1rem;
+}
