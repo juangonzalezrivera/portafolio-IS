@@ -147,3 +147,122 @@ header{
     margin-top: -100px;
     margin-right: -230px; 
 }
+
+@media screen and (max-width: 768px){
+
+    .imagen img{
+        width: 600px;
+        height: 200px;
+        margin-top: -25px;
+    }
+
+    .tareas{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+    .contenido {
+        width: 600px;
+        margin-left: 0px;
+        position: relative; /* Esto permite mover los elementos con 'position' */
+    }
+    
+    .contenido p {
+        font-size: 0.8rem;
+        margin-left: -45px; /* Eliminar los márgenes para que el texto no se desplace */
+        margin-top: -10px;
+    }
+    
+    .contenido p:hover {
+        font-size: 0.9rem;
+        margin-left: -45px; /* Eliminar los márgenes para que el texto no se desplace */
+        margin-top: -10px;
+    }
+
+    .contenido h2 {
+        font-family: 'Arial', sans-serif; /* Corregí el valor de 'font-family' */
+        margin-top: 0;
+        margin-left: 0;
+    }
+    
+    .contenido img {
+        position: absolute; /* Mueve la imagen independientemente del flujo del documento */
+        margin-left: 110px;
+        margin-top: -10px; /* Ajusta la posición de la imagen sin afectar al texto */
+        width: 170px;
+    }
+}
+
+@media screen and (max-width: 480px){
+
+    h1 {
+        font-size: 1.3rem;
+    }
+    
+    .imagen img{
+        width: 400px;
+        height: 100px;
+        margin-top: -25px;
+    }
+
+    .imagen{
+        height: 80px;
+    }
+
+    .descripcion h2 {
+        font-size: 1.7rem;
+    }
+
+    .descripcion p.informacion{
+        font-size: 1rem;
+    }
+
+
+    .nombres p{
+        font-size: 0.9rem;
+    }
+
+    .tareas{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+    .contenido {
+        width: 300px;
+        margin-left: 0px;
+        position: relative; /* Esto permite mover los elementos con 'position' */
+        height: 250px;
+    }
+    
+    .contenido p {
+        font-size: 0.6rem;
+        margin-left: -235px; /* Eliminar los márgenes para que el texto no se desplace */
+        margin-top: -10px;
+    }
+    
+    .contenido p:hover {
+        font-size: 0.65rem;
+        margin-left: -235px; /* Eliminar los márgenes para que el texto no se desplace */
+        margin-top: -10px;
+    }
+
+    .contenido h2 {
+        font-family: 'Arial', sans-serif; /* Corregí el valor de 'font-family' */
+        margin-top: -90px;
+        margin-left: -270px;
+        font-size: 2rem;
+    }
+    
+    .contenido img {
+        position: absolute; /* Mueve la imagen independientemente del flujo del documento */
+        margin-left: 530px;
+        margin-top: 140px; /* Ajusta la posición de la imagen sin afectar al texto */
+        width: 140px;
+    }
+}

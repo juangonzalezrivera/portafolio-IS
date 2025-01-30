@@ -33,6 +33,7 @@ header .img {
     text-align: center; 
     background-color: #1f2c38;
     height: 180px;
+    border-radius: 10px;
 }
 
 .mapa-mental h2{
@@ -46,6 +47,20 @@ header .img {
     text-align: center;
     color: whitesmoke;
 }
+
+.video {
+    text-align: center; 
+    background-color: #1f2c38;
+    height: 580px;
+    border-radius: 10px;
+}
+
+.video h2{
+    text-align: center;
+    font-size: 2rem;
+    color: whitesmoke;
+}
+
 
 .mapa-mental button {
     margin-top: 10px;
@@ -98,6 +113,10 @@ header .img {
     border-radius: 8px;
 }
 
+.descripcion {
+    border-radius: 10px;
+}
+
 .descripcion p.principal{
     font-size: 1.4rem;
     text-align: center;
@@ -129,12 +148,35 @@ header .img {
         padding: 10px;
     }
 
+    .video iframe {
+        width: 90%;  /* Ocupa el 90% del ancho */
+        height: 350px;  /* Reduce la altura */
+    }
+
+    .video {
+        text-align: center; 
+        background-color: #1f2c38;
+        height: 480px;
+        border-radius: 10px;
+    }
 
     }
 
 
 
 @media screen and (max-width: 480px) {
+
+    .video {
+        text-align: center; 
+        background-color: #1f2c38;
+        height: 3%;
+
+    }
+
+    .video iframe {
+        width: 95%;  /* Ocupa el 100% del ancho disponible */
+        height: 250px;  /* Reduce aún más la altura */
+    }
 
 
 
@@ -153,27 +195,7 @@ header .img {
         color: rgb(255, 255, 255);
     }
 
-    .mapa-mental button {
-        margin-top: -10px;
-        padding: 10px 20px; 
-        font-size: 16px;
-        cursor: pointer; 
-        background-color: #0e131b; 
-        color: white; 
-        border: none; 
-        border-radius: 5px; 
-    }
-    
-    .mapa-mental button:hover {
-        margin-top: -10px;
-        padding: 10px 20px; 
-        font-size: 20px;
-        cursor: pointer; 
-        background-color:aquamarine; 
-        color: rgb(0, 0, 0); 
-        border: none; 
-        border-radius: 5px; 
-    }
+
 
 
     }
