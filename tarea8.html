@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 8 - Diseño Estructural</title>
+    <link rel="stylesheet" href="tarea8.css">
+</head>
+<body>
+    <header>
+        <h1>Tarea 8 - Diseño Estructural</h1>
+        <img class="img" src="https://lh6.googleusercontent.com/proxy/qQrzQO_n7ZNU0HKNmMoRg-8xI-X3flr0coxGST-EUye4wXNHoOl6wVeaHnm7DN-7ksUiu1ynJKdvTxbvoWoOPNdL" alt="Logo de Portafolio">
+    </header>
+
+    <div class="tarea8">
+        <h1>Diseño Estructural del Sistema de Asistencia</h1>
+        
+        <div class="video-principal">
+            <h2>Video Explicativo</h2>
+            <iframe 
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/bONnRJMzjn0" 
+                frameborder="0" 
+                allowfullscreen>
+            </iframe>
+        </div>
+        <div class="documento">
+            <h2>Documentación Completa</h2>
+            <a href="https://drive.google.com/file/d/1lzqqkhoVyDwxND9PR3u8DaFq9QfUJ5Qp/view" target="_blank">
+                <button>Ver Documento PDF</button>
+            </a>
+        </div>
+
+        <div class="contenido-estructural">
+            <h2>Componentes del Diseño Estructural</h2>
+            
+            <div class="definicion">
+                <h3>1. Diagrama de Bloques</h3>
+                <p>Representación visual de alto nivel que muestra los componentes principales y sus interacciones.</p>
+                <ul>
+                    <li>Módulo de Reconocimiento Facial</li>
+                    <li>Sistema de Notificaciones</li>
+                    <li>Base de Datos Estudiantil</li>
+                    <li>Interfaz de Reportes</li>
+                </ul>
+            </div>
+
+            <div class="definicion">
+                <h3>2. Diseño Semántico de Datos</h3>
+                <p>Modelado conceptual de entidades y sus relaciones:</p>
+                <div class="diagrama">
+                    <strong>Entidades:</strong><br>
+                    - Estudiante (ID, Nombre, Grupo)<br>
+                    - RegistroAsistencia (Fecha, Hora, Estado)<br>
+                    - Clase (Materia, Horario)<br>
+                    <strong>Relaciones:</strong><br>
+                    - Un Estudiante tiene múltiples RegistrosAsistencia<br>
+                    - Cada Clase contiene múltiples Estudiantes
+                </div>
+            </div>
+
+            <div class="crc-card">
+                <h3>3. Tarjeta CRC - Ejemplo</h3>
+                <p><strong>Clase:</strong> Estudiante</p>
+                <p><strong>Responsabilidades:</strong></p>
+                <ul>
+                    <li>Almacenar datos personales</li>
+                    <li>Gestionar registros de asistencia</li>
+                    <li>Notificar cambios de estado</li>
+                </ul>
+                <p><strong>Colaboradores:</strong></p>
+                <ul>
+                    <li>RegistroAsistencia</li>
+                    <li>Clase</li>
+                    <li>SistemaNotificaciones</li>
+                </ul>
+            </div>
+
+            <div class="definicion">
+                <h3>4. Diccionario de Clases</h3>
+                <ul>
+                    <li><strong>Estudiante:</strong>
+                        <ul>
+                            <li>Atributos: ID, nombre, grupo</li>
+                            <li>Métodos: obtenerAsistencia(), actualizarDatos()</li>
+                        </ul>
+                    </li>
+                    <li><strong>RegistroAsistencia:</strong>
+                        <ul>
+                            <li>Atributos: fecha, hora, estado</li>
+                            <li>Métodos: generarReporte(), notificarAusencia()</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="diagrama">
+                <h3>5. Diagrama de Clases (UML)</h3>
+                <pre>
+                +---------------------+       +---------------------+
+                |     Estudiante       |       | RegistroAsistencia  |
+                +---------------------+       +---------------------+
+                | - id: int           |<>-----| - fecha: Date       |
+                | - nombre: String    |       | - hora: Time        |
+                | - grupo: String     |       | - estado: boolean   |
+                +---------------------+       +---------------------+
+                | + getAsistencia()   |       | + generarReporte()  |
+                | + actualizarDatos()|       +---------------------+
+                +---------------------+
+                </pre>
+            </div>
+
+            <h2>Implementación en el Sistema</h2>
+            <ul>
+                <li>Arquitectura modular basada en componentes</li>
+                <li>Integración con base de datos relacional</li>
+                <li>Patrón MVC para separación de responsabilidades</li>
+                <li>API REST para comunicación entre módulos</li>
+            </ul>
+
+            <h2>Referencias</h2>
+            <div class="definicion">
+                <ul>
+                    <li>Sommerville, I. (2016). Software engineering</li>
+                    <li>Gamma, E. et al. (1995). Design Patterns</li>
+                    <li>Fowler, M. (2003). UML Distilled</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

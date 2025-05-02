@@ -1,0 +1,155 @@
+/* Estilos generales */
+body {
+    background-color: rgb(189, 206, 212);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: rgb(241, 241, 241);
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+header {
+    width: 100%;
+    height: 250px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+header .img {
+    max-width: 500px;
+    height: auto;
+    margin-bottom: 20px;
+    display: block;
+}
+
+/* Estilos para Tarea 8 */
+.tarea8 {
+    margin: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.tarea8 h1 {
+    text-align: center;
+    color: #1f2c38;
+    font-size: 2rem;
+}
+
+/* Estilos para video */
+.video-principal {
+    text-align: center;
+    background-color: #1f2c38;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.video-principal iframe {
+    width: 90%;
+    height: 500px;
+    border-radius: 8px;
+}
+
+/* Estilos para documento */
+.documento {
+    text-align: center;
+    background-color: #1f2c38;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.documento button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #0e131b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.documento button:hover {
+    background-color: aquamarine;
+    color: black;
+}
+
+/* Estilos contenido principal */
+.contenido-estructural {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contenido-estructural h2 {
+    color: #1f2c38;
+    font-size: 1.8rem;
+    margin: 25px 0 15px;
+    border-bottom: 2px solid #1f2c38;
+    padding-bottom: 5px;
+}
+
+.contenido-estructural h3 {
+    color: #2c3e50;
+    font-size: 1.4rem;
+    margin: 20px 0 10px;
+}
+
+.definicion {
+    background-color: #e8f4f8;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 15px 0;
+    border-left: 4px solid #1f2c38;
+}
+
+.diagrama {
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    overflow-x: auto;
+}
+
+.crc-card {
+    background-color: #fff;
+    border: 2px solid #1f2c38;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 15px 0;
+
+}
+
+.video-principal h2, .documento h2 {
+    color: white;
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .video-principal iframe {
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .video-principal iframe {
+        height: 200px;
+    }
+    
+    .contenido-estructural h2 {
+        font-size: 1.6rem;
+    }
+}

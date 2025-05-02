@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 14 - Modelo Relacional para Sistema de Asistencia</title>
+    <link rel="stylesheet" href="tarea14.css">
+</head>
+<body>
+    <header>
+        <h1>Tarea 14 - Modelo Relacional para Sistema de Asistencia</h1>
+        <img class="img" src="https://lh6.googleusercontent.com/proxy/qQrzQO_n7ZNU0HKNmMoRg-8xI-X3flr0coxGST-EUye4wXNHoOl6wVeaHnm7DN-7ksUiu1ynJKdvTxbvoWoOPNdL" alt="Logo de Portafolio">
+    </header>
+
+    <div class="tarea14">
+        <h1>Implementación del Modelo Relacional para el Sistema de Asistencia</h1>
+        
+        <div class="video-container">
+            <div class="video">
+                <h2>Video Explicativo</h2>
+                <iframe src="https://www.youtube.com/embed/fjuhAbW26wk" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="documento">
+            <h2>Documentación Completa</h2>
+            <a href="https://drive.google.com/file/d/1yyP9LC4QSOlV1vHCxbnbNhQ09UHr4vhM/view?usp=sharing" target="_blank">
+                <button>Ver Documento PDF</button>
+            </a>
+        </div>
+
+        <div class="seccion">
+            <h2>Transformación del Modelo E/R al Modelo Relacional</h2>
+            <p>Partiendo del modelo conceptual, identificamos las entidades principales y sus relaciones...</p>
+            
+            <div class="sql-code">
+                <pre><span class="sql-keyword">CREATE TABLE</span> <span class="sql-table">Estudiante</span> (
+    <span class="sql-column">idEstudiante</span> INT <span class="sql-keyword">PRIMARY KEY</span>,
+    <span class="sql-column">nombre</span> <span class="sql-keyword">VARCHAR</span>(100),
+    <span class="sql-column">apellido</span> <span class="sql-keyword">VARCHAR</span>(100),
+    <span class="sql-column">grado</span> <span class="sql-keyword">VARCHAR</span>(50)
+);</pre>
+            </div>
+        </div>
+
+        <div class="seccion">
+            <h2>Herramientas Propuestas para Implementación</h2>
+            <div class="herramientas-grid">
+                <div class="herramienta">
+                    <h4>Sistemas de Gestión de Bases de Datos</h4>
+                    <ul>
+                        <li>MySQL</li>
+                        <li>PostgreSQL</li>
+                    </ul>
+                </div>
+                <div class="herramienta">
+                    <h4>Frameworks de Backend</h4>
+                    <ul>
+                        <li>Node.js con Express</li>
+                        <li>Python con Flask</li>
+                    </ul>
+                </div>
+                <div class="herramienta">
+                    <h4>Frameworks Frontend</h4>
+                    <ul>
+                        <li>React para Web</li>
+                        <li>Flutter para Móvil</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="seccion">
+            <h2>Integración de la Base de Datos con las Interfaces</h2>
+            <ol class="pasos-integracion">
+                <li>Configuración del backend como intermediario</li>
+                <li>Creación de APIs RESTful</li>
+                <li>Implementación de conexiones seguras</li>
+                <li>Consumo de APIs desde frontend</li>
+            </ol>
+            
+            <div class="codigo-container">
+                <h4>Ejemplo de conexión con Node.js y MySQL</h4>
+                <div class="codigo">
+                    <pre>const mysql = require('mysql');
+const connection = mysql.createConnection({
+    host: 'localhost',
+    user: 'usuario',
+    password: 'clave',
+    database: 'asistencias_db'
+});</pre>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

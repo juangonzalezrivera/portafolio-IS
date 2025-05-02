@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 7 - Diseño Arquitectónico</title>
+    <link rel="stylesheet" href="tarea7.css">
+</head>
+<body>
+    <header>
+        <h1>Tarea 7 - Diseño Arquitectónico</h1>
+        <img class="img" src="https://lh6.googleusercontent.com/proxy/qQrzQO_n7ZNU0HKNmMoRg-8xI-X3flr0coxGST-EUye4wXNHoOl6wVeaHnm7DN-7ksUiu1ynJKdvTxbvoWoOPNdL" alt="Logo de Portafolio">
+    </header>
+
+    <div class="tarea7">
+        <h1>Diseño Arquitectónico del Sistema de Asistencia Escolar</h1>
+        
+        <div class="video-container">
+            <div class="video">
+                <h2>Video Explicativo </h2>
+                <iframe src="https://www.youtube.com/embed/mQgWmJOOTVA" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video">
+                <h2>Video de avances </h2>
+                <iframe src="https://www.youtube.com/embed/w5u_pkmCDfs" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="documento">
+            <h2>Documentación Completa</h2>
+            <p>PDF con el análisis completo de requerimientos y casos de uso</p>
+            <a href="https://drive.google.com/file/d/18dq9y1r5nQzRhpwnD2ADNL-biNKc33Oc/view" target="_blank">
+                <button>Ver Documento PDF</button>
+            </a>
+        </div>
+
+        <div class="contenido">
+            <h2>Contextualización del Diseño Arquitectónico</h2>
+            <p>El diseño arquitectónico establece la estructura fundamental del sistema, conectando los requerimientos con la implementación. Nuestro sistema se compone de:</p>
+            <ul>
+                <li>Componente de Reconocimiento Facial</li>
+                <li>Módulo de Notificaciones</li>
+                <li>Sistema de Reportes Automatizados</li>
+                <li>Interfaz Multiplataforma</li>
+            </ul>
+
+            <h2>Diagrama de Casos de Uso</h2>
+            <div class="diagrama">
++-------------------------------------------------+
+| Sistema de Registro de Asistencia Escolar con   |
+| Cámara Inteligente (SmartSchool Attendance)     |
++-------------------------------------------------+
+/ | \
+/ | \
+(Registrar Asistencia) (Consultar Historial) (Generar Reportes)
+^ | ^ ^
+| | | |
+[Cámara IA] [Docente] [Docente/Administrador] [Administrador]
+\
+\
+(Notificar Inasistencia)
+^
+|
+[Padres/Tutores]
+            </div>
+
+            <h2>Casos de Uso Principales</h2>
+            <h3>1. Registrar Asistencia</h3>
+            <ul>
+                <li>Actores: Cámara IA, Docente</li>
+                <li>Flujo Principal: Reconocimiento facial automático</li>
+                <li>Flujo Alternativo: Validación manual por docente</li>
+            </ul>
+
+            <h3>2. Generar Reportes</h3>
+            <ul>
+                <li>Formatos disponibles: PDF, Excel</li>
+                <li>Frecuencia: Diario, Semanal, Mensual</li>
+                <li>Acceso: Web y Móvil</li>
+            </ul>
+
+            <h2>Actores del Sistema</h2>
+            <ul>
+                <li><strong>Cámara IA:</strong> Componente autónomo para reconocimiento facial</li>
+                <li><strong>Administrador:</strong> Configuración del sistema y gestión de usuarios</li>
+                <li><strong>Docente:</strong> Supervisión y validación de registros</li>
+                <li><strong>Padres:</strong> Recepción de notificaciones en tiempo real</li>
+            </ul>
+
+            <h2>Proceso de Construcción</h2>
+            <ol>
+                <li>Análisis de requerimientos con stakeholders</li>
+                <li>Diseño de arquitectura modular</li>
+                <li>Validación de casos de uso</li>
+                <li>Prototipado de interfaces</li>
+            </ol>
+
+            <h2>Conclusión</h2>
+            <p>El diseño arquitectónico presentado garantiza una base sólida para el desarrollo, cumpliendo con los objetivos de negocio y permitiendo una implementación escalable y mantenible.</p>
+        </div>
+    </div>
+</body>
+</html>

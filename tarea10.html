@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 10 - Diseño Lógico Físico</title>
+    <link rel="stylesheet" href="tarea10.css">
+</head>
+<body>
+    <header>
+        <h1>Tarea 10 - Diagramas UML Avanzados</h1>
+        <img class="img" src="https://lh6.googleusercontent.com/proxy/qQrzQO_n7ZNU0HKNmMoRg-8xI-X3flr0coxGST-EUye4wXNHoOl6wVeaHnm7DN-7ksUiu1ynJKdvTxbvoWoOPNdL" alt="Logo de Portafolio">
+    </header>
+
+    <div class="tarea10">
+        <h1>Diseño Lógico Físico del Sistema</h1>
+        
+        <div class="video-container">
+            <div class="video">
+                <h2>Video Explicativo</h2>
+                <iframe src="https://www.youtube.com/embed/RStYqpmx1h4" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="documento">
+            <h2>Documentación Completa</h2>
+            <p>PDF con los diagramas UML detallados</p>
+            <a href="https://drive.google.com/file/d/19F9e8EPrJAMkzLuz5P0klMvKOjgYES5H/view" target="_blank">
+                <button>Ver PDF</button>
+            </a>
+        </div>
+
+        <div class="contenido">
+            <h2>Diagramas UML Implementados</h2>
+            
+            <h3>1. Diagrama de Estados</h3>
+            <div class="diagrama">
+stateDiagram-v2
+    [*] --> Inactivo
+    Inactivo --> Detección: Activación de sensor
+    Detección --> Captura: Presencia detectada
+    Captura --> Procesamiento: Imagen capturada
+    Procesamiento --> Registro: Análisis exitoso
+    Registro --> Notificación: Registro confirmado
+    Notificación --> Inactivo: Espera siguiente evento
+    Procesamiento --> Error: Fallo en el análisis
+    Error --> Inactivo: Reinicio
+            </div>
+
+            <h3>2. Diagrama de Actividades</h3>
+            <div class="diagrama">
+flowchart TD
+    A[Inicio] --> B[Captura de Imagen]
+    B --> C[Procesamiento y Análisis]
+    C --> D{¿Rostro Reconocido?}
+    D -- Sí --> E[Registrar Asistencia]
+    D -- No --> F[Notificar Error]
+    E --> G[Actualizar Base de Datos]
+    F --> G
+    G --> H[Enviar Confirmación al Usuario]
+    H --> A
+            </div>
+
+            <h3>3. Diagrama de Componentes</h3>
+            <div class="diagrama">
+graph LR
+    A[Cámara Inteligente] --> B[Módulo de Procesamiento]
+    B --> C[Base de Datos]
+    B --> D[Interfaz de Usuario]
+    D --> C
+    B --> E[Servidor de Comunicación]
+    A --> E
+            </div>
+
+            <h3>4. Diagrama de Despliegue</h3>
+            <div class="diagrama">
+graph TD
+    subgraph Aula
+        A[Cámara Inteligente]
+    end
+    
+    subgraph Servidor_Central
+        B[Módulo de Procesamiento]
+        C[Base de Datos]
+        D[Servidor de Comunicación]
+    end
+    
+    subgraph Usuarios
+        E[Interfaz de Usuario]
+    end
+    
+    A --> D
+    D --> B
+    B --> C
+    E --> C
+    E --> D
+            </div>
+
+            <h2>Conclusión</h2>
+            <ul>
+                <li>Integración de 4 diagramas UML para modelado completo</li>
+                <li>Diseño modular y escalable</li>
+                <li>Representación clara de flujos y componentes</li>
+                <li>Preparación para la fase de implementación</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,132 @@
+/* Estilos generales */
+body {
+    background-color: rgb(189, 206, 212);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: rgb(241, 241, 241);
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+header {
+    width: 100%;
+    height: 250px;
+    background-color: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+header .img {
+    max-width: 500px;
+    height: auto;
+    margin-bottom: 20px;
+    display: block;
+    border-radius: 8px;
+}
+
+/* Contenedor principal */
+.tarea10 {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+}
+
+/* Sección de videos */
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 25px;
+    margin: 30px 0;
+}
+
+.video-card {
+    background: #1f2c38;
+    border-radius: 12px;
+    padding: 15px;
+    transition: transform 0.3s ease;
+}
+
+.video-card:hover {
+    transform: translateY(-5px);
+}
+
+.video-card h2 {
+    color: #fff;
+    font-size: 1.4rem;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.video-card iframe {
+    width: 100%;
+    height: 250px;
+    border: none;
+    border-radius: 8px;
+}
+
+/* Contenido educativo */
+.contenido-educativo {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    margin: 25px 0;
+}
+
+.contenido-educativo h2 {
+    color: #1f2c38;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    border-left: 5px solid #1f2c38;
+    padding-left: 15px;
+}
+
+.contenido-item {
+    margin: 20px 0;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.contenido-item h3 {
+    color: #2c3e50;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .video-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .video-card iframe {
+        height: 200px;
+    }
+    
+    .tarea10 {
+        margin: 10px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .video-card iframe {
+        height: 180px;
+    }
+    
+    .contenido-educativo h2 {
+        font-size: 1.6rem;
+    }
+}

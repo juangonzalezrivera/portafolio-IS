@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 13 - Modelo Entidad-Relación</title>
+    <link rel="stylesheet" href="tarea13.css">
+</head>
+<body>
+    <header>
+        <h1>Tarea 13 - Modelo Entidad-Relación</h1>
+        <img class="img" src="https://lh6.googleusercontent.com/proxy/qQrzQO_n7ZNU0HKNmMoRg-8xI-X3flr0coxGST-EUye4wXNHoOl6wVeaHnm7DN-7ksUiu1ynJKdvTxbvoWoOPNdL" alt="Logo de Portafolio">
+    </header>
+
+    <div class="tarea13">
+        <h1>Diseño del Modelo Entidad-Relación para el Sistema de Asistencia</h1>
+        
+        <div class="video-container">
+            <div class="video">
+                <h2>Video Explicativo</h2>
+                <iframe src="https://www.youtube.com/embed/YyhL2E_qaRU" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="documento">
+            <h2>Documentación Completa</h2>
+            <a href="https://drive.google.com/file/d/1MsQp7Yyz7Hul-eA2nLULztlYrhQMbdOB/view" target="_blank">
+                <button>Ver Documento PDF</button>
+            </a>
+        </div>
+
+        <div class="contenido">
+            <h2>Componentes del Modelo ER</h2>
+            
+            <div class="componente-er">
+                <h3>1. Entidades Principales</h3>
+                <div class="entidades-grid">
+                    <div class="entidad">
+                        <h4>Estudiante</h4>
+                        <ul class="atributos">
+                            <li>ID (PK)</li>
+                            <li>Nombre</li>
+                            <li>Fecha Nacimiento</li>
+                        </ul>
+                    </div>
+                    <div class="entidad">
+                        <h4>Asistencia</h4>
+                        <ul class="atributos">
+                            <li>RegistroID (PK)</li>
+                            <li>Fecha</li>
+                            <li>Hora</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h3>2. Relaciones y Cardinalidades</h3>
+                <div class="relaciones-grid">
+                    <div class="relacion">
+                        <div class="entidades">
+                            <span>Estudiante</span>
+                            <span class="cardinalidad">1:N</span>
+                            <span>Asistencia</span>
+                        </div>
+                        <p>Un estudiante puede tener múltiples registros de asistencia</p>
+                    </div>
+                </div>
+
+                <h3>3. Atributos Clave</h3>
+                <div class="atributos-container">
+                    <div class="atributo-tipo">
+                        <h4>Simples</h4>
+                        <ul>
+                            <li>ID Estudiante</li>
+                            <li>Fecha Registro</li>
+                        </ul>
+                    </div>
+                    <div class="atributo-tipo">
+                        <h4>Compuestos</h4>
+                        <ul>
+                            <li>Dirección (calle, ciudad, CP)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h3>4. Restricciones de Integridad</h3>
+                <div class="restricciones">
+                    <div class="restriccion">
+                        <h4>Clave Primaria</h4>
+                        <p>ID Estudiante debe ser único</p>
+                    </div>
+                    <div class="restriccion">
+                        <h4>Referencial</h4>
+                        <p>Asistencia requiere Estudiante existente</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Proceso de Construcción</h2>
+            <ol class="pasos-er">
+                <li>Identificación de entidades y atributos</li>
+                <li>Definición de relaciones</li>
+                <li>Establecimiento de cardinalidades</li>
+                <li>Implementación de restricciones</li>
+                <li>Validación del modelo</li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>
