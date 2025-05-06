@@ -1,4 +1,7 @@
-/* Tarea15.css - Estilos para la Norma ISO/IEC 29110 */
+/* Tarea16.css - Estilos para Presentación de Autoestima */
+
+/* Manteniendo exactamente el mismo formato de Tarea15.css */
+/* Solo cambiaremos los nombres de clases para que sea tarea16 en lugar de tarea15 */
 
 /* Estilos Generales */
 body {
@@ -31,7 +34,7 @@ header h1 {
 }
 
 /* Contenedor Principal */
-.tarea15 {
+.tarea16 {
     max-width: 1200px;
     margin: 20px auto;
     padding: 25px;
@@ -40,7 +43,7 @@ header h1 {
     box-shadow: 0 8px 30px rgba(0,0,0,0.1);
 }
 
-.tarea15 h1 {
+.tarea16 h1 {
     color: #1f2c38;
     font-size: 2.2rem;
     text-align: center;
@@ -169,13 +172,13 @@ header h1 {
     border-bottom: 2px solid #4ECDC4;
 }
 
-/* Entregables */
-.entregables-list {
+/* Listas */
+.autoestima-list {
     list-style-type: none;
     padding: 0;
 }
 
-.entregables-list li {
+.autoestima-list li {
     padding: 12px 20px;
     margin: 8px 0;
     background: #e8f4f8;
@@ -184,7 +187,7 @@ header h1 {
     padding-left: 50px;
 }
 
-.entregables-list li::before {
+.autoestima-list li::before {
     content: "✓";
     position: absolute;
     left: 20px;
@@ -227,7 +230,7 @@ header h1 {
         font-size: 2rem;
     }
     
-    .tarea15 {
+    .tarea16 {
         margin: 10px;
         padding: 15px;
     }
@@ -240,11 +243,11 @@ header h1 {
         width: 100%;
     }
     
-    .entregables-list li {
+    .autoestima-list li {
         padding-left: 40px;
     }
     
-    .entregables-list li::before {
+    .autoestima-list li::before {
         left: 15px;
     }
 }
